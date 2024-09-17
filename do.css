@@ -1,0 +1,95 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(135deg,blue,violet,green);
+}
+.tobox{
+ width: 40vw;
+ height: 40vh;
+ border: 2px solid black;
+ background-color: white;
+ position: relative;
+ justify-content: center;
+ top:230px;
+ left:420px;
+ 
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tobox img{
+    padding-left: 10px;
+}
+.tobox h2{
+    font-size: xx-large;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.row input{
+    transform: scale(2.1);
+    font-weight: bolder;
+    border-radius: 10px;
+    color: black;
+    border: 2px solid black;
+    font-size: smaller;
+   
+}
+.row button{
+    margin-left: 43px;
+    transform: scale(2.1);
+    border-radius: 10px;
+    width: 60px;
+    background-color: rgb(255, 119, 0);
+    border: 2px solid black;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding-left: 83px;
+    padding-top: 20px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content:'';
+    position: absolute;
+    height: 23px;
+    width: 23px;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHa2KM46YIBY9qf4OmNSfB94zu4FXoMturw&s");
+background-size: cover;
+top:19px;
+left:48px;
+
+}
+ul li.checked{
+    color:grey;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+background-image: url("https://cdn3.iconfinder.com/data/icons/basicolor-arrows-checks/24/149_check_ok-512.png");
+}
+ul li span{
+    position: relative;
+   
+   left: 350px;
+   
+    width: 180px;
+    height: 810px;
+    text-align: center;
+    border-radius: 60%;
+}
+ul li span:hover{
+    background-color: rgb(175, 167, 167);
+}
